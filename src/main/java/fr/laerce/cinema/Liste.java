@@ -41,7 +41,7 @@ public class Liste extends HttpServlet {
                 break;
             case 1 :
                Collections.sort(fd.lesFilms, Collections.reverseOrder(new FilmComparator()));
-               fd.lesFilms.forEach(film -> out.println("<li><a href='/info?id="+film.id+"'>"+film.titre+"</li>"));
+               fd.lesFilms.forEach(film -> out.println("<li><a href='/info?id="+film.id+"'https://bitbucket.org/laerce/cinema>"+film.titre+"</li>"));
                break;
             case 2 :
                 Collections.sort(fd.lesFilms, Collections.reverseOrder(Comparator.comparingDouble(o -> o.note)));
